@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="juice.js"></script>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="input-1" />
+            <input type="button" id="hello-button" value="Hello" />
+        </div>
+        <textarea id="juice-box" style="width: 100%">
+
+        </textarea>
+        <script id="page-script">
+            let page = juice({
+                element: document.body,
+                namePattern: "[p][I]"
+            });
+            console.log(page);
+            page.juice_box.innerHTML = document.body.innerHTML + "\n" + page.page_script.innerHTML;
+            
+        </script>
+    </body>
+</html>
